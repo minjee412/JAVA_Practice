@@ -1,9 +1,11 @@
 {
     "java.project.sourcePaths": [
+        "콜라/src",
         "Student/src",
         "EXAM03",
         "Credit/src",
         "Circle/src",
-        "Calendar/src"
+        "Calendar/src",
+        "배열테스트/src"
     ]
 }
