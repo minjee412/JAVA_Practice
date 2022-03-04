@@ -1,3 +1,3 @@
 {
-    "java.project.sourcePaths": ["EXAM03", "Credit/src", "Student/src"]
+    "java.project.sourcePaths": ["Student/src", "EXAM03", "Credit/src", "Circle/src"]
 }
