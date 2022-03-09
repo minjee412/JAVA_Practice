@@ -1,4 +1,4 @@
-public class 배열테스트 {
+public class ArrayTest {
     public static void main(String[] args) {
         // --------- 선언만 한것 --------- //
         // int[] arr1;
