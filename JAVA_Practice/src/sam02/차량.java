@@ -1,7 +1,8 @@
 package sam02;
 
 public class 차량 {
-	public String 이름;
+	public String 이름 = "차량";
+//	자동차 이름 테스트를 위한 초기화
 	public double 최대속도;
 	public int 정원;
 	
