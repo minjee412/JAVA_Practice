@@ -1,4 +1,4 @@
-package sam01;
+package 생활코딩;
 
 abstract class Calculator{
 	int left, right;
