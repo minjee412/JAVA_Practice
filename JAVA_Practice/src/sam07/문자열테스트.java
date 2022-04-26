@@ -1,6 +1,6 @@
 package sam07;
 
-public class ¹®ÀÚ¿­Å×½ºÆ® {
+public class ë¬¸ìì—´í…ŒìŠ¤íŠ¸ {
 	public static void p(Object obj) {
 		System.out.println(obj);
 	}
@@ -12,15 +12,15 @@ public class ¹®ÀÚ¿­Å×½ºÆ® {
 
 		// length()
 		int length = url.length();
-		p("¹®ÀÚ¿­±æÀÌ : " + length);	// ¹®ÀÚ¿­±æÀÌ : 25
+		p("ë¬¸ìì—´ê¸¸ì´ : " + length);	// ë¬¸ìì—´ê¸¸ì´ : 25
 		/*
 		p("============================");
-		// charAt() : ¹®ÀÚ¿­À» ÇÏ³ª¾¿ °¡Á®¿È
+		// charAt() : ë¬¸ìì—´ì„ í•˜ë‚˜ì”© ê°€ì ¸ì˜´
 		for(int i = 0; i < url.length() ; i++) {
 			p(url.charAt(i));	// h
 								// t
 								// t
-								// p ... (¹®ÀÚ¿­ ³¡±îÁö Ãâ·Â)
+								// p ... (ë¬¸ìì—´ ëê¹Œì§€ ì¶œë ¥)
 		}
 		*/
 		/*
@@ -30,44 +30,44 @@ public class ¹®ÀÚ¿­Å×½ºÆ® {
 			p(c1);	// h
 					// t
 					// t
-					// p ... (¹®ÀÚ¿­ ³¡±îÁö Ãâ·Â)
+					// p ... (ë¬¸ìì—´ ëê¹Œì§€ ì¶œë ¥)
 		}
 		p("============================");	
 		*/
 		
-		// contains() : ¿øÇÏ´Â ¹®ÀÚ¿­ Æ÷ÇÔ ¿©ºÎÈ®ÀÎ (boolean)			
+		// contains() : ì›í•˜ëŠ” ë¬¸ìì—´ í¬í•¨ ì—¬ë¶€í™•ì¸ (boolean)			
 		p(url.contains("http"));	// true
 
-		// indexOf() : ¿øÇÏ´Â ¹®ÀÚ¿­ÀÌ º»¹®¿¡¼­ (¾Õ¿¡¼­)¸î¹øÂ°¿¡ ÀÖ³ª?
+		// indexOf() : ì›í•˜ëŠ” ë¬¸ìì—´ì´ ë³¸ë¬¸ì—ì„œ (ì•ì—ì„œ)ëª‡ë²ˆì§¸ì— ìˆë‚˜?
 		p(url.indexOf(".co"));		// 18
 		
-		// lastIndexOf() : ¿øÇÏ´Â ¹®ÀÚ¿­ÀÌ º»¹®¿¡¼­ (³¡¿¡¼­)¸î¹øÂ°¿¡ ÀÖ³ª?
+		// lastIndexOf() : ì›í•˜ëŠ” ë¬¸ìì—´ì´ ë³¸ë¬¸ì—ì„œ (ëì—ì„œ)ëª‡ë²ˆì§¸ì— ìˆë‚˜?
 		p(url.lastIndexOf("."));	// 21
 		
 		p("[" + url + "]"); 	// [https://FastCampus.co.kr/       ]
-		// trim() : °ø¹é Á¦°Å
+		// trim() : ê³µë°± ì œê±°
 		p("[" + url.trim() + "]"); 	// [https://FastCampus.co.kr/]
 		
 		// toLowerCase() , toUpperCase()
 		p(url.toLowerCase());	// https://fastcampus.co.kr/
 		p(url.toUpperCase());	// HTTPS://FASTCAMPUS.CO.KR/
 		
-		// equals() : ´ë¼Ò¹®ÀÚ ±¸ºĞµÊ , equalsIgnoreCase() : ´ë¼Ò¹®ÀÚ ±¸ºĞ ¾øÀ½ 
+		// equals() : ëŒ€ì†Œë¬¸ì êµ¬ë¶„ë¨ , equalsIgnoreCase() : ëŒ€ì†Œë¬¸ì êµ¬ë¶„ ì—†ìŒ 
 		p(url.equals(FS));		// false
 		p(url.equalsIgnoreCase(FS)); 	// true
 		
 		
 		String url2 = "http://www.naver.com/news/tv/sbs";
 //		news, 	tv,  	sbs
-//		ºĞ·ù,  	¸ÅÃ¼, 	¹æ¼Û±¹
+//		ë¶„ë¥˜,  	ë§¤ì²´, 	ë°©ì†¡êµ­
 //		news, 	radio, 	kbs
 		
 		p(url2);	// http://www.naver.com/news/tv/sbs
 		p(url2.replace("http://www.naver.com/", ""));	// news/tv/sbs
 		p("-----------------------------------");
 		
-		// split() : ()¾ÈÀÇ ¹®ÀÚ¿­À» ±âÁØÀ¸·Î ÂÉ°³¼­ String[]¿¡ ´ã¾Æ ÁØ´Ù.
-		// replace(a,b) : a¸¦ b·Î ´ëÃ¼ ½ÃÄÑÁØ´Ù. 
+		// split() : ()ì•ˆì˜ ë¬¸ìì—´ì„ ê¸°ì¤€ìœ¼ë¡œ ìª¼ê°œì„œ String[]ì— ë‹´ì•„ ì¤€ë‹¤.
+		// replace(a,b) : aë¥¼ bë¡œ ëŒ€ì²´ ì‹œì¼œì¤€ë‹¤. 
 		// replaceAll()
 		String[] url2LiSt = url2.replace("http://www.naver.com/", "").split("/");
 			/*
@@ -77,10 +77,39 @@ public class ¹®ÀÚ¿­Å×½ºÆ® {
 						// sbs
 			 }
 			*/
-		p("ºĞ·ù: " + url2LiSt[0]);	// ºĞ·ù: news
-		p("¸ÅÃ¼: " + url2LiSt[1]);	// ¸ÅÃ¼: tv
-		p("¹æ¼Û±¹: " + url2LiSt[2]);	// ¹æ¼Û±¹: sbs
+		p("ë¶„ë¥˜: " + url2LiSt[0]);	// ë¶„ë¥˜: news
+		p("ë§¤ì²´: " + url2LiSt[1]);	// ë§¤ì²´: tv
+		p("ë°©ì†¡êµ­: " + url2LiSt[2]);	// ë°©ì†¡êµ­: sbs
+		
+		//	concat() : ()ì•ˆì— ìˆëŠ” ë¬¸ìì—´ì„ ë’¤ì— ë” í•´ì¤€ë‹¤.
+		p(url2.concat("index.html"));	// http://www.naver.com/news/tv/sbsindex.html
+		p(url2 + "index.html");		// http://www.naver.com/news/tv/sbsindex.html
+		
+//		âœ”ï¸ concat()ì˜ ì‹¤ë¬´ ì ìš© âœ”ï¸
+//		mariadb, mysql ë¬¸ìì—´ ì¡°í•©ì¼ë•Œ, concat('a','b','c')
+//		Oracle -> 'a' || 'b' || 'c'
+//		MSSQL -> 'a' + 'b' + 'c'
+		
+		// substring() : () ì•ˆì— ë²”ìœ„ì— í•´ë‹¹ í•˜ëŠ” ë‚´ìš©ì„ ê°€ì ¸ì˜¤ê² ë‹¤.
+		p(url.substring(8,18));	// FastCampus
 
+		// valuable
+		String v1 = String.valueOf(12);
+		int n1 = Integer.valueOf(v1);
+		
+		String v2 = 13 + "";
+		p(v2.getClass().getName());		// java.lang.String
+		
+		// compareTo() : ì•ë’¤ ë‚´ìš© ë¹„êµí•˜ì—¬ ì–‘ìˆ˜ ìŒìˆ˜ë¡œ í‘œì‹œ
+		
+		String str1 = "í™ê¸¸ë™";
+		String str2 = "ì´ìˆœì‹ ";
+		
+		p(str1.compareTo(str2)); 	// 3801
+		p(str2.compareTo(str1)); 	// -3801
+		p(str1.compareTo(str1));	// 0
+		
+		
 	}
 
 }
