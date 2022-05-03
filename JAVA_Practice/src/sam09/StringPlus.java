@@ -16,5 +16,22 @@ public class StringPlus {
 		return sb.toString();
 	}
 	
+	// 스트링버퍼테스트에서 .line()을 한 줄에 쓰기 위해서는 ? 
+	//	public void appendFormat(String format, Object... args) {
+	//		sb.append(String.format(format, args));
+	//	}
+	
+	// StringBuilder를 return 해야 한다.
+	public StringPlus appendFormat(String format, Object... args) {
+		sb.append(String.format(format, args));
+		return this;
+	}
+	
+	
+	public StringPlus line() {
+		sb.append(System.lineSeparator());
+		return this;
+	}
+	
 	
 }
