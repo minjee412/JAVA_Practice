@@ -20,7 +20,7 @@ public class 날짜테스트 {
 		LocalDateTime localDateTime = LocalDateTime.now();
 		System.out.println(localDateTime); 	// 2022-05-02T17:23:17.175532800
 		
-		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("YYYY-MM-dd HH:mm:ss");
 		System.out.println(localDateTime.format(dateTimeFormatter)); 	// 2022-05-02 17:23:17
 
 		System.out.println(localDateTime.plusYears(1).plusMonths(1).plusDays(1).format(dateTimeFormatter)); // 2023-06-03 17:25:30
